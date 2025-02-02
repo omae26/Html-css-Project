@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #f0f0f0;
+}
+
+.answer {
+    display: none;
+    font-weight: bold;
+    color: green;
+    margin-top: 10px;
+}
+
+/* Show the correct answer when the correct radio button is selected */
+input.correct:checked ~ .answer {
+    display: block;
+}
