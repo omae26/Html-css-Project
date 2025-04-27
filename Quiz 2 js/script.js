@@ -14,6 +14,11 @@ const questions = [
         options: ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
         answer: "William Shakespeare"
     }
+    {
+       question: "Who wrote ' Pursuit of God'?",
+       options: ["A.W Tozer", "Rick Warren", "Joyce Meyer", "Priscilla Shierer"],
+       answer: "A.W Tozer"
+   }
 ];
 
 let currentQuestionIndex = 0;
